@@ -1,0 +1,902 @@
+[
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.89.224.",
+    "output": "{\"ticket_id\": \"TKT-11178\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My MacBook Pro M2 is completely broken and battery swollen.",
+    "output": "{\"ticket_id\": \"TKT-10865\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $3872 on account ACC-8767.",
+    "output": "{\"ticket_id\": \"TKT-10101\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.174.30.",
+    "output": "{\"ticket_id\": \"TKT-10439\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.9.131.",
+    "output": "{\"ticket_id\": \"TKT-10058\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Docker Desktop keeps throwing error CONNECTION_REFUSED on launch.",
+    "output": "{\"ticket_id\": \"TKT-11120\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and keyboard unresponsive.",
+    "output": "{\"ticket_id\": \"TKT-10323\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Internal CRM keeps throwing error FATAL_OOM_KILL on launch.",
+    "output": "{\"ticket_id\": \"TKT-10974\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2638 on account ACC-3322.",
+    "output": "{\"ticket_id\": \"TKT-10411\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10855\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-10820\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10044\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Dell 4K Monitor is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10049\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $328 on account ACC-1499.",
+    "output": "{\"ticket_id\": \"TKT-10849\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $3927 on account ACC-9218.",
+    "output": "{\"ticket_id\": \"TKT-10240\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10170\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-10523\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $823 on account ACC-3992.",
+    "output": "{\"ticket_id\": \"TKT-10765\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Snowflake Data Warehouse for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10838\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10423\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10380\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.91.4.",
+    "output": "{\"ticket_id\": \"TKT-10609\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Dell 4K Monitor is completely broken and screen won't turn on.",
+    "output": "{\"ticket_id\": \"TKT-10676\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Docker Desktop keeps throwing error CONNECTION_REFUSED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10344\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Postman keeps throwing error ERR_503_GATEWAY on launch.",
+    "output": "{\"ticket_id\": \"TKT-10109\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.146.235.",
+    "output": "{\"ticket_id\": \"TKT-10277\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Internal CRM keeps throwing error AUTH_EXPIRED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10677\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1329 on account ACC-7987.",
+    "output": "{\"ticket_id\": \"TKT-10570\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $3765 on account ACC-2109.",
+    "output": "{\"ticket_id\": \"TKT-10358\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-10598\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and battery swollen.",
+    "output": "{\"ticket_id\": \"TKT-10390\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10893\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for Q3 financial audit.",
+    "output": "{\"ticket_id\": \"TKT-10692\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Dell 4K Monitor is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10727\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Docker Desktop keeps throwing error FATAL_OOM_KILL on launch.",
+    "output": "{\"ticket_id\": \"TKT-10362\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10596\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.111.11.",
+    "output": "{\"ticket_id\": \"TKT-10427\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.43.151.",
+    "output": "{\"ticket_id\": \"TKT-10070\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My MacBook Pro M2 is completely broken and battery swollen.",
+    "output": "{\"ticket_id\": \"TKT-10321\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.125.20.",
+    "output": "{\"ticket_id\": \"TKT-10652\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-11065\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $3178 on account ACC-5484.",
+    "output": "{\"ticket_id\": \"TKT-10107\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-11108\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.64.106.",
+    "output": "{\"ticket_id\": \"TKT-10355\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.37.195.",
+    "output": "{\"ticket_id\": \"TKT-10950\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for Q3 financial audit.",
+    "output": "{\"ticket_id\": \"TKT-10342\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.225.57.",
+    "output": "{\"ticket_id\": \"TKT-10354\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for Q3 financial audit.",
+    "output": "{\"ticket_id\": \"TKT-10023\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1666 on account ACC-1444.",
+    "output": "{\"ticket_id\": \"TKT-10043\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $3567 on account ACC-2466.",
+    "output": "{\"ticket_id\": \"TKT-10243\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2293 on account ACC-8153.",
+    "output": "{\"ticket_id\": \"TKT-10737\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.201.146.",
+    "output": "{\"ticket_id\": \"TKT-11135\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Slack keeps throwing error ERR_503_GATEWAY on launch.",
+    "output": "{\"ticket_id\": \"TKT-10367\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $4307 on account ACC-3710.",
+    "output": "{\"ticket_id\": \"TKT-10163\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and keyboard unresponsive.",
+    "output": "{\"ticket_id\": \"TKT-11115\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $3323 on account ACC-3444.",
+    "output": "{\"ticket_id\": \"TKT-10332\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1824 on account ACC-5515.",
+    "output": "{\"ticket_id\": \"TKT-10988\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for Q3 financial audit.",
+    "output": "{\"ticket_id\": \"TKT-11172\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.24.247.",
+    "output": "{\"ticket_id\": \"TKT-11001\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.73.170.",
+    "output": "{\"ticket_id\": \"TKT-10377\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2305 on account ACC-2403.",
+    "output": "{\"ticket_id\": \"TKT-10309\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Snowflake Data Warehouse for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-10155\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.86.41.",
+    "output": "{\"ticket_id\": \"TKT-10210\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for Q3 financial audit.",
+    "output": "{\"ticket_id\": \"TKT-10086\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $3116 on account ACC-3822.",
+    "output": "{\"ticket_id\": \"TKT-10168\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.141.192.",
+    "output": "{\"ticket_id\": \"TKT-10994\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $206 on account ACC-1616.",
+    "output": "{\"ticket_id\": \"TKT-10051\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and screen won't turn on.",
+    "output": "{\"ticket_id\": \"TKT-10438\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.212.27.",
+    "output": "{\"ticket_id\": \"TKT-10549\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My MacBook Pro M2 is completely broken and keyboard unresponsive.",
+    "output": "{\"ticket_id\": \"TKT-10490\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10425\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2231 on account ACC-7648.",
+    "output": "{\"ticket_id\": \"TKT-10135\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2040 on account ACC-6091.",
+    "output": "{\"ticket_id\": \"TKT-11191\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-10054\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.33.30.",
+    "output": "{\"ticket_id\": \"TKT-10078\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My MacBook Pro M2 is completely broken and keyboard unresponsive.",
+    "output": "{\"ticket_id\": \"TKT-10430\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $829 on account ACC-7515.",
+    "output": "{\"ticket_id\": \"TKT-10184\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $140 on account ACC-9337.",
+    "output": "{\"ticket_id\": \"TKT-10056\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1781 on account ACC-1651.",
+    "output": "{\"ticket_id\": \"TKT-10942\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Postman keeps throwing error CONNECTION_REFUSED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10850\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $356 on account ACC-9791.",
+    "output": "{\"ticket_id\": \"TKT-11163\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10218\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10844\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1414 on account ACC-2356.",
+    "output": "{\"ticket_id\": \"TKT-10113\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Postman keeps throwing error CONNECTION_REFUSED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10548\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.250.252.",
+    "output": "{\"ticket_id\": \"TKT-11018\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.104.19.",
+    "output": "{\"ticket_id\": \"TKT-11072\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Internal CRM keeps throwing error CONNECTION_REFUSED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10174\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for data migration.",
+    "output": "{\"ticket_id\": \"TKT-11022\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-10615\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Dell 4K Monitor is completely broken and keyboard unresponsive.",
+    "output": "{\"ticket_id\": \"TKT-10513\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Slack keeps throwing error ERR_503_GATEWAY on launch.",
+    "output": "{\"ticket_id\": \"TKT-10461\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10286\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My YubiKey 5C is completely broken and keyboard unresponsive.",
+    "output": "{\"ticket_id\": \"TKT-10381\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Internal CRM keeps throwing error CONNECTION_REFUSED on launch.",
+    "output": "{\"ticket_id\": \"TKT-11007\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Slack keeps throwing error FATAL_OOM_KILL on launch.",
+    "output": "{\"ticket_id\": \"TKT-10670\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1590 on account ACC-6787.",
+    "output": "{\"ticket_id\": \"TKT-10534\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for Q3 financial audit.",
+    "output": "{\"ticket_id\": \"TKT-10909\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Snowflake Data Warehouse for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10292\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for Q3 financial audit.",
+    "output": "{\"ticket_id\": \"TKT-10123\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $213 on account ACC-5937.",
+    "output": "{\"ticket_id\": \"TKT-10582\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10140\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $678 on account ACC-6274.",
+    "output": "{\"ticket_id\": \"TKT-10735\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and battery swollen.",
+    "output": "{\"ticket_id\": \"TKT-10081\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2238 on account ACC-7703.",
+    "output": "{\"ticket_id\": \"TKT-10881\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $707 on account ACC-3545.",
+    "output": "{\"ticket_id\": \"TKT-10739\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Internal CRM keeps throwing error FATAL_OOM_KILL on launch.",
+    "output": "{\"ticket_id\": \"TKT-11101\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.52.32.",
+    "output": "{\"ticket_id\": \"TKT-10908\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and battery swollen.",
+    "output": "{\"ticket_id\": \"TKT-11166\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My MacBook Pro M2 is completely broken and keyboard unresponsive.",
+    "output": "{\"ticket_id\": \"TKT-10936\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Slack keeps throwing error AUTH_EXPIRED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10371\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $4366 on account ACC-6345.",
+    "output": "{\"ticket_id\": \"TKT-10889\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2161 on account ACC-8744.",
+    "output": "{\"ticket_id\": \"TKT-10156\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10991\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My MacBook Pro M2 is completely broken and screen won't turn on.",
+    "output": "{\"ticket_id\": \"TKT-10621\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My YubiKey 5C is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-11037\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My YubiKey 5C is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10244\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $4228 on account ACC-6106.",
+    "output": "{\"ticket_id\": \"TKT-10158\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2460 on account ACC-3797.",
+    "output": "{\"ticket_id\": \"TKT-10745\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10192\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.144.216.",
+    "output": "{\"ticket_id\": \"TKT-10533\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My YubiKey 5C is completely broken and battery swollen.",
+    "output": "{\"ticket_id\": \"TKT-10903\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-11003\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My MacBook Pro M2 is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-11069\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Dell 4K Monitor is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10413\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.225.62.",
+    "output": "{\"ticket_id\": \"TKT-11186\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1500 on account ACC-8784.",
+    "output": "{\"ticket_id\": \"TKT-10327\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.90.182.",
+    "output": "{\"ticket_id\": \"TKT-10128\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $3129 on account ACC-6377.",
+    "output": "{\"ticket_id\": \"TKT-10694\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Slack keeps throwing error CONNECTION_REFUSED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10630\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $4129 on account ACC-3439.",
+    "output": "{\"ticket_id\": \"TKT-10274\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Snowflake Data Warehouse for data migration.",
+    "output": "{\"ticket_id\": \"TKT-11147\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.204.55.",
+    "output": "{\"ticket_id\": \"TKT-10308\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.208.28.",
+    "output": "{\"ticket_id\": \"TKT-10233\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2334 on account ACC-7158.",
+    "output": "{\"ticket_id\": \"TKT-11047\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My YubiKey 5C is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10622\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10643\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10478\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.214.51.",
+    "output": "{\"ticket_id\": \"TKT-10471\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.64.134.",
+    "output": "{\"ticket_id\": \"TKT-10925\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-11097\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10626\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My YubiKey 5C is completely broken and screen won't turn on.",
+    "output": "{\"ticket_id\": \"TKT-10394\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $3405 on account ACC-5588.",
+    "output": "{\"ticket_id\": \"TKT-10636\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.196.252.",
+    "output": "{\"ticket_id\": \"TKT-10767\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My YubiKey 5C is completely broken and battery swollen.",
+    "output": "{\"ticket_id\": \"TKT-10532\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1963 on account ACC-6166.",
+    "output": "{\"ticket_id\": \"TKT-10717\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and screen won't turn on.",
+    "output": "{\"ticket_id\": \"TKT-10666\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10597\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Production Postgres DB for data migration.",
+    "output": "{\"ticket_id\": \"TKT-10481\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1968 on account ACC-4100.",
+    "output": "{\"ticket_id\": \"TKT-11102\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1714 on account ACC-9101.",
+    "output": "{\"ticket_id\": \"TKT-10314\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $559 on account ACC-3237.",
+    "output": "{\"ticket_id\": \"TKT-10728\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Slack keeps throwing error ERR_503_GATEWAY on launch.",
+    "output": "{\"ticket_id\": \"TKT-10209\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.156.121.",
+    "output": "{\"ticket_id\": \"TKT-10933\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.69.79.",
+    "output": "{\"ticket_id\": \"TKT-10433\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Postman keeps throwing error AUTH_EXPIRED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10328\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My MacBook Pro M2 is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10260\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for data migration.",
+    "output": "{\"ticket_id\": \"TKT-11116\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for debugging live checkout outage.",
+    "output": "{\"ticket_id\": \"TKT-10306\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Docker Desktop keeps throwing error AUTH_EXPIRED on launch.",
+    "output": "{\"ticket_id\": \"TKT-11066\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.215.196.",
+    "output": "{\"ticket_id\": \"TKT-10927\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.74.178.",
+    "output": "{\"ticket_id\": \"TKT-11024\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to Kubernetes Staging Cluster for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10270\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10290\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Slack keeps throwing error AUTH_EXPIRED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10812\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Internal CRM keeps throwing error AUTH_EXPIRED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10096\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.185.177.",
+    "output": "{\"ticket_id\": \"TKT-10887\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Internal CRM keeps throwing error FATAL_OOM_KILL on launch.",
+    "output": "{\"ticket_id\": \"TKT-10818\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $1099 on account ACC-6741.",
+    "output": "{\"ticket_id\": \"TKT-10031\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My MacBook Pro M2 is completely broken and battery swollen.",
+    "output": "{\"ticket_id\": \"TKT-10762\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Dell 4K Monitor is completely broken and device overheating.",
+    "output": "{\"ticket_id\": \"TKT-10953\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "My Lenovo ThinkPad is completely broken and battery swollen.",
+    "output": "{\"ticket_id\": \"TKT-10319\", \"category\": \"hardware\", \"urgency\": \"high\", \"recommended_tool\": \"dispatch_technician\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Internal CRM keeps throwing error ERR_503_GATEWAY on launch.",
+    "output": "{\"ticket_id\": \"TKT-10298\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.240.252.",
+    "output": "{\"ticket_id\": \"TKT-10199\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Docker Desktop keeps throwing error AUTH_EXPIRED on launch.",
+    "output": "{\"ticket_id\": \"TKT-10560\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Monthly cloud invoice discrepancy of $2036 on account ACC-8890.",
+    "output": "{\"ticket_id\": \"TKT-10178\", \"category\": \"billing\", \"urgency\": \"low\", \"recommended_tool\": \"audit_billing\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Application Postman keeps throwing error FATAL_OOM_KILL on launch.",
+    "output": "{\"ticket_id\": \"TKT-11131\", \"category\": \"software\", \"urgency\": \"medium\", \"recommended_tool\": \"restart_service\", \"requires_human_approval\": false}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Urgent: Detected unauthorized login attempt from IP 192.168.157.206.",
+    "output": "{\"ticket_id\": \"TKT-10088\", \"category\": \"security\", \"urgency\": \"critical\", \"recommended_tool\": \"quarantine_account\", \"requires_human_approval\": true}"
+  },
+  {
+    "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+    "input": "Need access to AWS Production S3 for compliance review.",
+    "output": "{\"ticket_id\": \"TKT-10787\", \"category\": \"access_control\", \"urgency\": \"high\", \"recommended_tool\": \"grant_temporary_access\", \"requires_human_approval\": true}"
+  }
+]

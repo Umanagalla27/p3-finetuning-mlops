@@ -1,0 +1,5 @@
+outs:
+- md5: f9bd8ac4c196bf2b0aea0fd9f5c78a71
+  size: 490084
+  hash: md5
+  path: tickets_raw.json

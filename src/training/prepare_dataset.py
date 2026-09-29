@@ -1,23 +1,64 @@
 import json
 import os
 import random
+
 from sklearn.model_selection import train_test_split
 
 CATEGORIES = ["access_control", "hardware", "software", "security", "billing"]
 URGENCIES = ["low", "medium", "high", "critical"]
 
 TEMPLATES = [
-    ("Need access to {system} for {reason}.", "access_control", "high", "grant_temporary_access"),
-    ("My {hardware_item} is completely broken and {hw_issue}.", "hardware", "high", "dispatch_technician"),
-    ("Application {app_name} keeps throwing error {err_code} on launch.", "software", "medium", "restart_service"),
-    ("Urgent: Detected unauthorized login attempt from IP {ip_addr}.", "security", "critical", "quarantine_account"),
-    ("Monthly cloud invoice discrepancy of ${amount} on account {acc_id}.", "billing", "low", "audit_billing"),
+    (
+        "Need access to {system} for {reason}.",
+        "access_control",
+        "high",
+        "grant_temporary_access",
+    ),
+    (
+        "My {hardware_item} is completely broken and {hw_issue}.",
+        "hardware",
+        "high",
+        "dispatch_technician",
+    ),
+    (
+        "Application {app_name} keeps throwing error {err_code} on launch.",
+        "software",
+        "medium",
+        "restart_service",
+    ),
+    (
+        "Urgent: Detected unauthorized login attempt from IP {ip_addr}.",
+        "security",
+        "critical",
+        "quarantine_account",
+    ),
+    (
+        "Monthly cloud invoice discrepancy of ${amount} on account {acc_id}.",
+        "billing",
+        "low",
+        "audit_billing",
+    ),
 ]
 
-SYSTEMS = ["Production Postgres DB", "AWS Production S3", "Kubernetes Staging Cluster", "Snowflake Data Warehouse"]
-REASONS = ["Q3 financial audit", "debugging live checkout outage", "compliance review", "data migration"]
+SYSTEMS = [
+    "Production Postgres DB",
+    "AWS Production S3",
+    "Kubernetes Staging Cluster",
+    "Snowflake Data Warehouse",
+]
+REASONS = [
+    "Q3 financial audit",
+    "debugging live checkout outage",
+    "compliance review",
+    "data migration",
+]
 HARDWARE = ["MacBook Pro M2", "Lenovo ThinkPad", "Dell 4K Monitor", "YubiKey 5C"]
-HW_ISSUES = ["screen won't turn on", "battery swollen", "keyboard unresponsive", "device overheating"]
+HW_ISSUES = [
+    "screen won't turn on",
+    "battery swollen",
+    "keyboard unresponsive",
+    "device overheating",
+]
 APPS = ["Docker Desktop", "Slack", "Postman", "Internal CRM"]
 ERRORS = ["ERR_503_GATEWAY", "FATAL_OOM_KILL", "CONNECTION_REFUSED", "AUTH_EXPIRED"]
 
@@ -37,7 +78,7 @@ def generate_synthetic_corpus(num_samples: int = 1200):
             err_code=random.choice(ERRORS),
             ip_addr=f"192.168.{random.randint(1, 254)}.{random.randint(1, 254)}",
             amount=random.randint(50, 4500),
-            acc_id=f"ACC-{random.randint(1000, 9999)}"
+            acc_id=f"ACC-{random.randint(1000, 9999)}",
         )
 
         expected_json = {
@@ -49,9 +90,12 @@ def generate_synthetic_corpus(num_samples: int = 1200):
         }
 
         sample = {
-            "instruction": "Extract the structured IT ticket metadata and output ONLY a valid JSON object matching the enterprise schema.",
+            "instruction": (
+                "Extract the structured IT ticket metadata and output ONLY a valid "
+                "JSON object matching the enterprise schema."
+            ),
             "input": text,
-            "output": json.dumps(expected_json)
+            "output": json.dumps(expected_json),
         }
         samples.append(sample)
 
